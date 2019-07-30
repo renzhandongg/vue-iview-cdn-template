@@ -1,0 +1,39 @@
+@media only screen and (min-width: 769px) {
+    ::-webkit-scrollbar-track-piece {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.ivu-page-options-sizer {
+    margin-right: 0;
+}
+
+.y-search {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .y-header {}
+
+    .y-body {
+        flex: 1;
+    }
+
+    .y-footer>.ivu-page {
+        padding: 15px 0;
+        float: right;
+    }
+}
