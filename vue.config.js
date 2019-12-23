@@ -6,6 +6,7 @@ module.exports = {
     },
     productionSourceMap: false,
     devServer: {
+        open:true,
         port: 8889, // 端口
     },
     // 生产环境 sourceMap
