@@ -70,3 +70,10 @@
 //
 // let r = timeTaken(() => Math.pow(2,10));
 
+const arr = [0,1];
+arr[5] = 5;
+console.log(arr[4] === undefined);
+console.log(arr[4] == null);
+const newArray = arr.filter(it => it !== undefined);
+console.log(newArray)
+console.log(newArray.length)
