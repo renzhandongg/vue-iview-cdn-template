@@ -6,17 +6,22 @@ module.exports = {
     },
     productionSourceMap: false,
     devServer: {
-        open:true,
+        open: true,
         port: 8889, // 端口
     },
     // 生产环境 sourceMap
     publicPath: './',
+    // optimization: {
+    //     splitChunks: {
+    //         chunks: "all"
+    //     }
+    // },
     chainWebpack: config => {
         config
             .plugin('html')
             .tap(options => {
                 options[0].template = './src/assets/index.html'
-                options[0].favicon = './favicon.ico'
+                options[0].favicon = './src/assets/favicon.ico'
                 return options
             })
     },
